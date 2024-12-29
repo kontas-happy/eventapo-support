@@ -3,9 +3,8 @@
 layout: home
 
 hero:
-  name: "Eventapo Support"
-  text: "Support for event service Eventapo"
-  tagline: My great project tagline
+  name: "サポートセンター"
+  tagline: "Eventapoに関するサポートを提供しています"
   actions:
     - theme: brand
       text: Markdown Examples
@@ -23,3 +22,8 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<style>
+  :root {
+  --vp-home-hero-name-color: #1155cc;
+  }
+</style>

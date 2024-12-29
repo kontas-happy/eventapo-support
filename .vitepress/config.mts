@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Support for event service Eventapo",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    siteTitle: "Eventapo Support",
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
