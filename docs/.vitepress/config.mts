@@ -8,14 +8,23 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
         "siteTitle": "Eventapo サポートセンター",
         "nav": [
+            { "text": "ホーム", "link": "/" },
             { "text": "サービスページ", "link": "https://eventapo.com/" },
-            { "text": "ホーム", "link": "/" }
+            { "text": "お問い合わせ", "link": "https://eventapo.com/contact" },
         ],
 
         "sidebar": [
             {
                 "text": "ホーム",
                 "link": "/",
+            },
+            {
+                "text": "サービスページ",
+                "link": "https://eventapo.com/",
+            },
+            {
+                "text": "お問い合わせ",
+                "link": "https://eventapo.com/contact",
             },
             {
                 "text": "導入ガイド",
@@ -28,6 +37,26 @@ export default defineConfig({
                     { "text": "Stripeとの連携", "link": "/connect-stripe" },
                     { "text": "イベント公開", "link": "/publish-event" },
                 ]
+            },
+            {
+                "text": "機能について",
+                "base": "/features",
+                "items": []
+            },
+            {
+                "text": "各種手数料",
+                "base": "/fees",
+                "items": []
+            },
+            {
+                "text": "よくある質問",
+                "base": "/faq",
+                "items": []
+            },
+            {
+                "text": "導入事例",
+                "base": "/case-studies",
+                "items": []
             }
         ],
     }
