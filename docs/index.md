@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "サポートセンター"
-  tagline: "Eventapoに関するサポートを提供しています"
+  name: "Eventapo\nサポートセンター"
+  tagline: "Eventapoに関するサポート情報を提供しています"
   actions:
     - theme: brand
       text: Markdown Examples
