@@ -72,10 +72,10 @@ export default defineConfig({
     "head": [
         ["link", { "rel": "icon", "href": "/favicon.ico" }],
         ["meta", {
-            "og:image": "https://eventapo.com/images/eventapo-support.jpg",
+            "og:image": "https://support.eventapo.com/images/eventapo-support.jpg",
             "og:site_name": "Eventapo サポートセンター",
             "twitter:card": "summary_large_image",
-            "twitter:image": "https://eventapo.com/images/eventapo-support.jpg"
+            "twitter:image": "https://support.eventapo.com/images/eventapo-support.jpg"
         }]
     ]
 });
