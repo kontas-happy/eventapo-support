@@ -11,21 +11,21 @@ export default defineConfig({
         "nav": [
             { "text": "ホーム", "link": "/" },
             { "text": "サービスページ", "link": "https://eventapo.com/" },
-            { "text": "お問い合わせ", "link": "https://eventapo.com/contact" },
+            { "text": "お問い合わせ", "link": "https://eventapo.com/contact" }
         ],
 
         "sidebar": [
             {
                 "text": "ホーム",
-                "link": "/",
+                "link": "/"
             },
             {
                 "text": "サービスページ",
-                "link": "https://eventapo.com/",
+                "link": "https://eventapo.com/"
             },
             {
                 "text": "お問い合わせ",
-                "link": "https://eventapo.com/contact",
+                "link": "https://eventapo.com/contact"
             },
             {
                 "text": "導入ガイド",
@@ -36,7 +36,7 @@ export default defineConfig({
                     { "text": "イベント作成と編集", "link": "/create-event" },
                     { "text": "チケット設定", "link": "/create-ticket" },
                     { "text": "Stripeとの連携", "link": "/connect-stripe" },
-                    { "text": "イベント公開", "link": "/publish-event" },
+                    { "text": "イベント公開", "link": "/publish-event" }
                 ]
             },
             {
@@ -59,6 +59,6 @@ export default defineConfig({
                 "base": "/case-studies",
                 "items": []
             }
-        ],
+        ]
     }
 });
