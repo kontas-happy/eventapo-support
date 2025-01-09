@@ -42,22 +42,30 @@ export default defineConfig({
             {
                 "text": "機能について",
                 "base": "/features",
-                "items": []
+                "items": [
+                    { "text": "(準備中)", "link": "/" }
+                ]
             },
             {
                 "text": "各種手数料",
                 "base": "/fees",
-                "items": []
+                "items": [
+                    { "text": "(準備中)", "link": "/" }
+                ]
             },
             {
                 "text": "よくある質問",
                 "base": "/faq",
-                "items": []
+                "items": [
+                    { "text": "(準備中)", "link": "/" }
+                ]
             },
             {
                 "text": "導入事例",
                 "base": "/case-studies",
-                "items": []
+                "items": [
+                    { "text": "(準備中)", "link": "/" }
+                ]
             }
         ]
     }
