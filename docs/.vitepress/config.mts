@@ -8,22 +8,21 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
         "siteTitle": "Eventapo サポートセンター",
         "nav": [
-            { "text": "Home", "link": "/" },
-            { "text": "Examples", "link": "/markdown-examples" }
+            { "text": "サービスページ", "link": "https://eventapo.com/" },
+            { "text": "ホーム", "link": "/" }
         ],
 
         "sidebar": [
             {
-                "text": "Examples",
+                "text": "機能について",
                 "items": [
-                    { "text": "Markdown Examples", "link": "/markdown-examples" },
-                    { "text": "Runtime API Examples", "link": "/api-examples" }
+                    { "text": "イベント作成", "link": "/features/create-event" },
+                    { "text": "イベント管理", "link": "/features/manage-event" },
+                    { "text": "チケット管理", "link": "/features/manage-ticket" },
+                    { "text": "参加者管理", "link": "/features/manage-participant" },
+                    { "text": "その他", "link": "/features/other" }
                 ]
             }
         ],
-
-        "socialLinks": [
-            { "icon": "github", "link": "https://github.com/vuejs/vitepress" }
-        ]
     }
 });
