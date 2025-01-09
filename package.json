@@ -1,4 +1,21 @@
 {
+  "name": "eventapo-support",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "homepage": "https://github.com/kontas-happy/eventapo-support#readme",
+  "bugs": {
+    "url": "https://github.com/kontas-happy/eventapo-support/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kontas-happy/eventapo-support.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "docs:dev": "npx vitepress dev docs",
     "docs:build": "npx vitepress build docs",
@@ -6,5 +23,6 @@
   },
   "dependencies": {
     "vitepress": "^1.5.0"
-  }
+  },
+  "devDependencies": {}
 }
