@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     "title": "Eventapo サポートセンター",
     "description": "Eventapoに関するサポート情報を提供します。",
+    "lang": "ja",
     "themeConfig": {
     // https://vitepress.dev/reference/default-theme-config
         "siteTitle": "Eventapo サポートセンター",
