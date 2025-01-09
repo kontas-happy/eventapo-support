@@ -1,4 +1,4 @@
-import DefaultTheme from 'vitepress/theme'
-import './eventapo.css'
+import DefaultTheme from "vitepress/theme";
+import "./eventapo.css";
 
-export default DefaultTheme
+export default DefaultTheme;
