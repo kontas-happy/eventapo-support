@@ -5,6 +5,9 @@ export default defineConfig({
     "title": "Eventapo サポートセンター",
     "description": "Eventapoに関するサポート情報を提供します。",
     "lang": "ja",
+    "sitemap": {
+        "hostname": "https://support.eventapo.com"
+    },
     "themeConfig": {
     // https://vitepress.dev/reference/default-theme-config
         "siteTitle": "Eventapo サポートセンター",
@@ -13,7 +16,6 @@ export default defineConfig({
             { "text": "サービスページ", "link": "https://eventapo.com/" },
             { "text": "お問い合わせ", "link": "https://eventapo.com/contact" }
         ],
-
         "sidebar": [
             {
                 "text": "ホーム",
