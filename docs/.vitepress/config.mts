@@ -14,13 +14,19 @@ export default defineConfig({
 
         "sidebar": [
             {
-                "text": "機能について",
+                "text": "ホーム",
+                "link": "/",
+            },
+            {
+                "text": "導入ガイド",
+                "base": "/guide",
                 "items": [
-                    { "text": "イベント作成", "link": "/features/create-event" },
-                    { "text": "イベント管理", "link": "/features/manage-event" },
-                    { "text": "チケット管理", "link": "/features/manage-ticket" },
-                    { "text": "参加者管理", "link": "/features/manage-participant" },
-                    { "text": "その他", "link": "/features/other" }
+                    { "text": "Eventapoとは", "link": "/" },
+                    { "text": "アカウント作成", "link": "/create-account" },
+                    { "text": "イベント作成と編集", "link": "/create-event" },
+                    { "text": "チケット設定", "link": "/create-ticket" },
+                    { "text": "Stripeとの連携", "link": "/connect-stripe" },
+                    { "text": "イベント公開", "link": "/publish-event" },
                 ]
             }
         ],
