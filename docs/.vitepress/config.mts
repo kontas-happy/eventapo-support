@@ -71,11 +71,11 @@ export default defineConfig({
     },
     "head": [
         ["link", { "rel": "icon", "href": "/favicon.ico" }],
-        ["meta", {
-            "og:image": "https://support.eventapo.com/images/eventapo-support.jpg",
-            "og:site_name": "Eventapo サポートセンター",
-            "twitter:card": "summary_large_image",
-            "twitter:image": "https://support.eventapo.com/images/eventapo-support.jpg"
-        }]
+        ["meta", { "property": "og:title", "content": "Eventapo サポートセンター" }],
+        ["meta", { "property": "og:description", "content": "Eventapoに関するサポート情報を提供します。" }],
+        ["meta", { "property": "og:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }],
+        ["meta", { "property": "og:site_name", "content": "Eventapo サポートセンター" }],
+        ["meta", { "name": "twitter:card", "content": "summary_large_image" }],
+        ["meta", { "name": "twitter:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }]
     ]
 });
