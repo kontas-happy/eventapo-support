@@ -6,8 +6,12 @@ hero:
   name: "Eventapo\nサポートセンター"
   tagline: "Eventapoに関するサポート情報を提供しています"
   actions:
-    - text: 初めての方はこちら
+    - theme: brand
+      text: 初めての方はこちら
       link: /guide
+    - theme: alt
+      text: 会場操作ガイド
+      link: /guide/venue
     - theme: alt
       text: 機能について
       link: /features

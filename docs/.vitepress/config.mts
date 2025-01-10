@@ -42,6 +42,15 @@ export default defineConfig({
                 ]
             },
             {
+                "text": "会場操作ガイド",
+                "base": "/guide/venue",
+                "items": [
+                    { "text": "会場操作とは", "link": "/" },
+                    { "text": "チケットのスキャンと入退場", "link": "/scan-ticket" },
+                    { "text": "参加者の一覧", "link": "/attendees-list" }
+                ]
+            },
+            {
                 "text": "機能について",
                 "base": "/features",
                 "items": [
