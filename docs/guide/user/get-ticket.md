@@ -1,3 +1,5 @@
 ---
 next: false
 ---
+
+<WritingPage />

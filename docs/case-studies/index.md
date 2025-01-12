@@ -1,3 +1,5 @@
 ---
 prev: false
 ---
+
+<WritingPage />
