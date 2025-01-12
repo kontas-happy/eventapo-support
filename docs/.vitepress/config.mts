@@ -84,13 +84,15 @@ export default defineConfig({
         const title = pageData.title ? `${pageData.title} | Eventapo サポートセンター` : "Eventapo サポートセンター";
         const description = pageData.frontmatter.description || "Eventapoに関するサポート情報を提供します。";
         return [
-            ["link", { "rel": "icon", "href": "/favicon.ico" }],
             ["meta", { "property": "og:title", "content": title }],
-            ["meta", { "property": "og:description", "content": description }],
-            ["meta", { "property": "og:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }],
-            ["meta", { "property": "og:site_name", "content": "Eventapo サポートセンター" }],
-            ["meta", { "name": "twitter:card", "content": "summary_large_image" }],
-            ["meta", { "name": "twitter:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }]
+            ["meta", { "property": "og:description", "content": description }]
         ];
-    }
+    },
+    "head": [
+        ["link", { "rel": "icon", "href": "/favicon.ico" }],
+        ["meta", { "property": "og:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }],
+        ["meta", { "property": "og:site_name", "content": "Eventapo サポートセンター" }],
+        ["meta", { "name": "twitter:card", "content": "summary_large_image" }],
+        ["meta", { "name": "twitter:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }]
+    ]
 });
