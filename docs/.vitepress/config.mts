@@ -84,6 +84,22 @@ export default defineConfig({
         },
         "footer": {
             "copyright": `© ${new Date().getFullYear()} Kontas Inc.`
+        },
+
+        // locales
+        "lastUpdated": {
+            "text": "最終更新日"
+        },
+        "docFooter": {
+            "next": "次のページ",
+            "prev": "前のページ"
+        },
+        "langMenuLabel": "言語",
+        "notFound": {
+            "linkLabel": "ホームに戻る",
+            "linkText": "ホームに戻る",
+            "quote": "進む方向を変えなければ、目指す場所にたどり着くだろう — 老子",
+            "title": "ページが見つかりません"
         }
     },
     "transformHead": ({ pageData }) => {
