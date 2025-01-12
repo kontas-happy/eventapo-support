@@ -78,7 +78,13 @@ export default defineConfig({
                     { "text": "(準備中)", "link": "/" }
                 ]
             }
-        ]
+        ],
+        "search": {
+            "provider": "local"
+        },
+        "footer": {
+            "copyright": `© ${new Date().getFullYear()} Kontas Inc.`
+        }
     },
     "transformHead": ({ pageData }) => {
         const title = pageData.title ? `${pageData.title} | Eventapo サポートセンター` : "Eventapo サポートセンター";
