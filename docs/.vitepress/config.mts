@@ -30,6 +30,16 @@ export default defineConfig({
                 "link": "https://eventapo.com/contact"
             },
             {
+                "text": "ユーザーガイド",
+                "base": "/guide/user",
+                "items": [
+                    { "text": "Eventapoとは", "link": "/" },
+                    { "text": "アカウント作成", "link": "/create-account" },
+                    { "text": "イベントを探す", "link": "/view-event" },
+                    { "text": "チケットを入手", "link": "/get-ticket" }
+                ]
+            },
+            {
                 "text": "導入ガイド",
                 "base": "/guide",
                 "items": [
