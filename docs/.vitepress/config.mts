@@ -9,7 +9,7 @@ export default defineConfig({
         "hostname": "https://support.eventapo.com"
     },
     "themeConfig": {
-    // https://vitepress.dev/reference/default-theme-config
+        // https://vitepress.dev/reference/default-theme-config
         "siteTitle": "Eventapo サポートセンター",
         "nav": [
             { "text": "ホーム", "link": "/" },
@@ -83,9 +83,22 @@ export default defineConfig({
     "transformHead": ({ pageData }) => {
         const title = pageData.title ? `${pageData.title} | Eventapo サポートセンター` : "Eventapo サポートセンター";
         const description = pageData.frontmatter.description || "Eventapoに関するサポート情報を提供します。";
+        const gtag = process.env.NODE_ENV === "production" ? "G-ZS67DJT6KL" : "";
         return [
             ["meta", { "property": "og:title", "content": title }],
-            ["meta", { "property": "og:description", "content": description }]
+            ["meta", { "property": "og:description", "content": description }],
+            [
+                "script",
+                { "async": "", "src": "https://www.googletagmanager.com/gtag/js?id=" + gtag }
+            ],
+            [
+                "script",
+                {},
+                `window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gtag}');`
+            ]
         ];
     },
     "head": [
