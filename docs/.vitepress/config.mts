@@ -110,7 +110,16 @@ export default defineConfig({
             "linkText": "ホームに戻る",
             "quote": "進む方向を変えなければ、目指す場所にたどり着くだろう — 老子",
             "title": "ページが見つかりません"
-        }
+        },
+        "outline": {
+            "label": "目次",
+            "level": "deep"
+        },
+        "darkModeSwitchLabel": "外観",
+        "lightModeSwitchTitle": "ライトモード",
+        "darkModeSwitchTitle": "ダークモード",
+        "sidebarMenuLabel": "メニュー",
+        "returnToTopLabel": "トップに戻る"
     },
     "transformHead": ({ pageData }) => {
         const title = pageData.title ? `${pageData.title} | Eventapo サポートセンター` : "Eventapo サポートセンター";
