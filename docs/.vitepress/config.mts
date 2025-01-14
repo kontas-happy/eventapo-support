@@ -90,7 +90,30 @@ export default defineConfig({
             }
         ],
         "search": {
-            "provider": "local"
+            "provider": "local",
+            "options": {
+                "translations": {
+                    "button": {
+                        "buttonAriaLabel": "検索ボックスを開く",
+                        "buttonText": "検索"
+                    },
+                    "modal": {
+                        "backButtonTitle": "閉じる",
+                        "displayDetails": "詳細リストを表示",
+                        "footer": {
+                            "closeKeyAriaLabel": "エスケープキー",
+                            "closeText": "閉じる",
+                            "navigateDownKeyAriaLabel": "下矢印キー",
+                            "navigateText": "選択",
+                            "navigateUpKeyAriaLabel": "上矢印キー",
+                            "selectKeyAriaLabel": "エンターキー",
+                            "selectText": "決定"
+                        },
+                        "noResultsText": "検索結果がありません",
+                        "resetButtonTitle": "検索をリセット"
+                    }
+                }
+            }
         },
         "footer": {
             "copyright": `© ${new Date().getFullYear()} Kontas Inc.`
@@ -115,7 +138,7 @@ export default defineConfig({
             "label": "目次",
             "level": "deep"
         },
-        "darkModeSwitchLabel": "外観",
+        "darkModeSwitchLabel": "外観テーマ",
         "lightModeSwitchTitle": "ライトモード",
         "darkModeSwitchTitle": "ダークモード",
         "sidebarMenuLabel": "メニュー",
