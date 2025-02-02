@@ -18,7 +18,7 @@ Eventapoを使うには、アカウントを作成する必要があります。
 1. [Eventapo](https://eventapo.com/)のトップページにアクセスします。
 2. 画面右上または中央にある「[サインアップ](https://eventapo.com/signup)」ボタンをクリックします。
 
-### 2. SSOアカウントで登録
+### 2. お手持ちのアカウントで登録
 
 ![Eventapo サインアップ](/images/guide/eventapo-signup.png)
 
