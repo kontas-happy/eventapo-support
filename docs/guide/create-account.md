@@ -13,7 +13,7 @@ Eventapoを使うには、アカウントを作成する必要があります。
 
 ### 1. トップページにアクセス
 
-![Eventapo トップページ](/images/guide/eventapo-top.png)
+![Eventapo トップページ](/images/guide/eventapo-top-signup-button.png)
 
 1. [Eventapo](https://eventapo.com/)のトップページにアクセスします。
 2. 画面右上または中央にある「[サインアップ](https://eventapo.com/signup)」ボタンをクリックします。
