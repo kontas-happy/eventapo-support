@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     "title": "Eventapo サポートセンター",
-    "description": "Eventapoに関するサポート情報を提供します。",
+    "description": "Eventapoへようこそ。\nこのサイトでは、Eventapoに関するサポート情報を提供します。",
     "lang": "ja",
     "sitemap": {
         "hostname": "https://support.eventapo.com"
