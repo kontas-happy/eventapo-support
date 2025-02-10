@@ -71,7 +71,7 @@ export default defineConfig({
                 "text": "各種手数料",
                 "base": "/fees",
                 "items": [
-                    { "text": "(準備中)", "link": "/" }
+                    { "text": "手数料について", "link": "/" }
                 ]
             },
             {
@@ -171,5 +171,15 @@ export default defineConfig({
         ["meta", { "property": "og:site_name", "content": "Eventapo サポートセンター" }],
         ["meta", { "name": "twitter:card", "content": "summary_large_image" }],
         ["meta", { "name": "twitter:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }]
-    ]
+    ],
+    "markdown": {
+        "math": true,
+        "container": {
+            "tipLabel": "ヒント",
+            "warningLabel": "注意",
+            "dangerLabel": "警告",
+            "infoLabel": "情報",
+            "detailsLabel": "詳細"
+        }
+    }
 });
