@@ -35,7 +35,7 @@ th {
 
 /* Reset a */
 .vp-doc .VPFeatures .item a {
-    color: initial !important;
+    color: var(--vp-c-text-1) !important;
     text-decoration: initial !important;
 }
 
