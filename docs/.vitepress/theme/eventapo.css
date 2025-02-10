@@ -17,6 +17,9 @@ th {
     max-width: 100%;
 }
 
+.DocSearch-Button-Placeholder {
+    margin-top: 0 !important;
+}
 /* Reset padding */
 .vp-doc .VPFeatures {
     padding: 0 !important;
@@ -63,8 +66,8 @@ th {
     margin-right: 20px !important;
 }
 
-.VPFeatures.full-width .item .box .details,
-.VPFeatures.half-width .item .box .details {
+.VPFeatures.full-width .item .box p,
+.VPFeatures.half-width .item .box p {
     width: 100% !important;
     margin-bottom: 0 !important;
 }

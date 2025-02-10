@@ -75,10 +75,10 @@ export default defineConfig({
                 ]
             },
             {
-                "text": "よくある質問",
+                "text": "よくあるご質問",
                 "base": "/faq",
                 "items": [
-                    { "text": "(準備中)", "link": "/" }
+                    { "text": "FAQトップ", "link": "/" }
                 ]
             },
             {
