@@ -9,29 +9,55 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
-import { VPFeatures } from "vitepress/theme";
+import { DefaultTheme, VPFeatures } from "vitepress/theme";
 import { ref, computed } from "vue";
 
-const items = [
+interface Feature {
+    icon?: DefaultTheme.FeatureIcon
+    title: string
+    details: string
+    link?: string
+    linkText?: string
+    rel?: string
+    target?: string
+}
+
+const items: Feature[] = [
     {
         "title": "招待のみのイベントを作成できますか？",
-        "details": "招待機能・参加制限機能はまだ実装されていませんが、\n今後のアップデートで実装予定です。"
+        "details": "招待機能・参加制限機能はまだ実装されていませんが、\n今後のアップデートで実装予定です。",
+        "icon": {
+            "light": "/images/icons/redeem_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg",
+            "dark": "/images/icons/dark/redeem_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg"
+        }
     },
     {
         "title": "チケットをキャンセルできますか？",
-        "details": "キャンセル機能は実装中です。今しばらくお待ちください。\n参加取り消し・返金については、イベント主催者にお問い合わせください。"
+        "details": "キャンセル機能は実装中です。今しばらくお待ちください。\n参加取り消し・返金については、イベント主催者にお問い合わせください。",
+        "icon": {
+            "light": "/images/icons/event_busy_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg",
+            "dark": "/images/icons/dark/event_busy_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg"
+        }
     },
     {
         "title": "返金するときの操作を教えてください。",
         "details": "返金は、Stripeのダッシュボードから行えます。\n詳細は、Stripeの公式サポートページをご覧ください。",
         "link": "https://support.stripe.com/questions/how-to-refund-a-customer",
-        "linkText": "購入者への返金方法 : Stripe: ヘルプ & サポート"
+        "linkText": "購入者への返金方法 : Stripe: ヘルプ & サポート",
+        "icon": {
+            "light": "/images/icons/paid_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg",
+            "dark": "/images/icons/dark/paid_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg"
+        }
     },
     {
         "title": "現金での支払いはできますか？",
-        "details": "現金での支払いはできません。\nStripeで利用可能な決済方法をご利用ください。"
+        "details": "現金での支払いはできません。\nStripeで利用可能な決済方法をご利用ください。",
+        "icon": {
+            "light": "/images/icons/payments_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg",
+            "dark": "/images/icons/dark/payments_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg"
+        }
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
 

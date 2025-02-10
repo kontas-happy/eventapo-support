@@ -61,7 +61,9 @@ th {
 }
 
 .VPFeatures.full-width .item .box .icon,
-.VPFeatures.half-width .item .box .icon {
+.VPFeatures.half-width .item .box .icon,
+.VPFeatures.full-width .item .box .VPImage,
+.VPFeatures.half-width .item .box .VPImage {
     margin-bottom: 0 !important;
     margin-right: 20px !important;
 }
