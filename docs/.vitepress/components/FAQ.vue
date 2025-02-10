@@ -28,6 +28,10 @@ const items = [
         "details": "返金は、Stripeのダッシュボードから行えます。\n詳細は、Stripeの公式サポートページをご覧ください。",
         "link": "https://support.stripe.com/questions/how-to-refund-a-customer",
         "linkText": "購入者への返金方法 : Stripe: ヘルプ & サポート"
+    },
+    {
+        "title": "現金での支払いはできますか？",
+        "details": "現金での支払いはできません。\nStripeで利用可能な決済方法をご利用ください。"
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
 
