@@ -13,8 +13,12 @@ Eventapoは、カンファレンスの開催のために生まれた、**イベ�
 
 このサイトでは、Eventapoでイベントに参加するための3つの手順について以下の順に説明します。
 
-1. **[アカウント作成](./create-account.md)**
-2. **[イベントを探す](./view-event.md)**
-3. **[チケットを入手](./get-ticket.md)**
+<VPFeatures
+  :features="[
+    { title: 'アカウント作成', details: 'Eventapoを使うには、アカウントを作成する必要があります。', icon: '1', link: './create-account.md' },
+    { title: 'イベントを探す', details: 'Eventapoでイベントを探すのは、非常に簡単です。', icon: '2', link: './view-event.md' },
+    { title: 'チケットを入手', details: 'Eventapoでチケットを入手・購入するのは、非常に簡単です。', icon: '3', link: './get-ticket.md' }
+  ]"
+/>
 
 それでは、まずはアカウント作成から始めましょう。
