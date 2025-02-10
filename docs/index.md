@@ -9,7 +9,7 @@ hero:
     - theme: brand
       text: Eventapoの使い方
       link: /guide/user
-    - theme: brand
+    - theme: green
       text: イベントを開催する
       link: /guide
     - theme: alt

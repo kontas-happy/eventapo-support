@@ -1,4 +1,8 @@
 :root {
+    --vp-c-indigo-1: #6ba1ff;
+    --vp-c-indigo-2: #2669df;
+    --vp-c-indigo-3: #2159ba;
+    --vp-c-indigo-soft: rgba(102, 158, 255, 0.16);
     --vp-home-hero-name-color: #1155cc;
 }
 
@@ -8,7 +12,8 @@ table {
 }
 
 th {
-    width: 1%; /* This is the key */
+    /* This is the key */
+    width: 1%;
     max-width: 100%;
 }
 
@@ -62,4 +67,22 @@ th {
 .VPFeatures.half-width .item .box .details {
     width: 100% !important;
     margin-bottom: 0 !important;
+}
+
+.VPButton.green {
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-brand-text);
+    background-color: var(--vp-c-green-3);
+}
+
+.VPButton.green:hover {
+    border-color: var(--vp-button-brand-hover-border);
+    color: var(--vp-button-brand-hover-text);
+    background-color: var(--vp-c-green-2);
+}
+
+.VPButton.green:active {
+    border-color: var(--vp-button-brand-active-border);
+    color: var(--vp-button-brand-active-text);
+    background-color: var(--vp-c-green-1);
 }
