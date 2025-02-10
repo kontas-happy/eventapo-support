@@ -1,6 +1,7 @@
 import "./eventapo.css";
 
 import DefaultTheme from "vitepress/theme";
+import { VPFeatures } from "vitepress/theme";
 
 import WritingPage from "../components/WritingPage.vue";
 
@@ -9,5 +10,6 @@ export default {
 
     "enhanceApp"({ app }) {
         app.component("WritingPage", WritingPage);
+        app.component("VPFeatures", VPFeatures);
     }
 };

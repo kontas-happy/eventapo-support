@@ -11,3 +11,55 @@ th {
     width: 1%; /* This is the key */
     max-width: 100%;
 }
+
+/* Reset padding */
+.vp-doc .VPFeatures {
+    padding: 0 !important;
+}
+
+/* Reset title */
+.vp-doc .VPFeatures h2 {
+    margin: initial !important;
+    border-top: initial !important;
+    padding-top: initial !important;
+    letter-spacing: initial !important;
+}
+
+/* Reset a */
+.vp-doc .VPFeatures .item a {
+    color: initial !important;
+    text-decoration: initial !important;
+}
+
+.VPFeatures.full-width .item {
+    width: 100% !important;
+}
+
+.VPFeatures.half-width .item {
+    width: 100% !important;
+}
+
+@media (min-width: 640px) {
+    .VPFeatures.half-width .item {
+        width: 50% !important;
+    }
+}
+
+.VPFeatures.full-width .item .box,
+.VPFeatures.half-width .item .box {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+}
+
+.VPFeatures.full-width .item .box .icon,
+.VPFeatures.half-width .item .box .icon {
+    margin-bottom: 0 !important;
+    margin-right: 20px !important;
+}
+
+.VPFeatures.full-width .item .box .details,
+.VPFeatures.half-width .item .box .details {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+}
