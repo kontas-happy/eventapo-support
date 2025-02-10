@@ -173,7 +173,6 @@ export default defineConfig({
         ["meta", { "name": "twitter:image", "content": "https://support.eventapo.com/images/eventapo-support.jpg" }]
     ],
     "markdown": {
-        "math": true,
         "container": {
             "tipLabel": "ヒント",
             "warningLabel": "注意",
