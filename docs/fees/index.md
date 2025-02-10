@@ -1,6 +1,9 @@
 ---
 prev: false
 next: false
+description: |-
+  Eventapoの一部サービスには、手数料が発生します。
+  このページでは、各種手数料について説明します。
 ---
 
 # 手数料について
