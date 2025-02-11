@@ -1,6 +1,7 @@
 ---
 prev: false
 next: false
+lastUpdated: false
 description: |-
   Eventapoに関するよくある質問をまとめています。
   こちらで解決できない場合は、お気軽にお問い合わせください。
