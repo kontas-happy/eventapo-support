@@ -19,7 +19,10 @@ import { ref, watch } from "vue";
 const price = ref(1000);
 
 watch(price, (newValue) => {
+    // 0未満にならないようにする
     if (newValue < 0) price.value = 0;
+    // 少数を切り捨てる
+    price.value = Math.floor(price.value);
 });
 </script>
 
