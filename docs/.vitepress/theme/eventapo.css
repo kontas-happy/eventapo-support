@@ -20,6 +20,11 @@ th {
 .DocSearch-Button-Placeholder {
     margin-top: 0 !important;
 }
+
+.VPImage {
+    border-radius: 8px;
+}
+
 /* Reset padding */
 .vp-doc .VPFeatures {
     padding: 0 !important;

@@ -24,9 +24,14 @@ interface Feature {
     target?: string
 }
 
-const items: Feature[] = [
+interface FeatureWithTags extends Feature {
+    tags: string[]
+}
+
+const items: FeatureWithTags[] = [
     {
         "title": "招待のみのイベントを作成できますか？",
+        "tags": ["招待", "参加制限", "プライベート", "非公開", "イベント設定", "アクセス制御", "セキュリティ", "参加者管理", "承認制", "招待制"],
         "details": "招待機能・参加制限機能はまだ実装されていませんが、\n今後のアップデートで実装予定です。",
         "icon": {
             "light": "/images/icons/redeem_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg",
@@ -35,6 +40,7 @@ const items: Feature[] = [
     },
     {
         "title": "チケットをキャンセルできますか？",
+        "tags": ["チケット", "キャンセル", "返金", "払い戻し", "参加取り消し", "取り消し", "変更", "退出", "参加者管理", "予約変更"],
         "details": "キャンセル機能は実装中です。今しばらくお待ちください。\n参加取り消し・返金については、イベント主催者にお問い合わせください。",
         "icon": {
             "light": "/images/icons/event_busy_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg",
@@ -43,6 +49,7 @@ const items: Feature[] = [
     },
     {
         "title": "返金するときの操作を教えてください。",
+        "tags": ["返金", "払い戻し", "Stripe", "操作方法", "決済", "キャンセル", "支払い", "チケット", "主催者", "マニュアル"],
         "details": "返金は、Stripeのダッシュボードから行えます。\n詳細は、Stripeの公式サポートページをご覧ください。",
         "link": "https://support.stripe.com/questions/how-to-refund-a-customer",
         "linkText": "購入者への返金方法 : Stripe: ヘルプ & サポート",
@@ -53,13 +60,25 @@ const items: Feature[] = [
     },
     {
         "title": "現金での支払いはできますか？",
+        "tags": ["現金", "支払い", "決済方法", "オフライン", "Stripe", "クレジットカード", "銀行振込", "支払い方法", "料金", "オンライン決済"],
         "details": "現金での支払いはできません。\nStripeで利用可能な決済方法をご利用ください。",
         "icon": {
             "light": "/images/icons/payments_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg",
             "dark": "/images/icons/dark/payments_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg"
         }
+    },
+    {
+        "title": "Stripeとはなんですか？",
+        "tags": ["Stripe", "決済", "支払い", "オンライン決済", "クレジットカード", "金融", "サービス", "API", "セキュリティ", "決済システム"],
+        "details": "Stripe, Inc.は、カリフォルニア州サンフランシスコとアイルランドのダブリンに本社を置く金融サービスおよびSaaS企業です。主にeコマースウェブサイトやモバイルアプリ向けに、決済処理ソフトウェアとAPIを提供しています。",
+        "link": "https://stripe.com/jp",
+        "linkText": "Stripe | インターネット向け金融インフラ",
+        "icon": {
+            "src":"/images/logos/stripe.svg"
+        }
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
+
 
 const searchQuery = ref("");
 
@@ -68,7 +87,8 @@ const filteredItems = computed(() => {
     const query = searchQuery.value.toLowerCase();
     const result = items.filter(item => 
         item.title.toLowerCase().includes(query) || 
-        item.details.toLowerCase().includes(query)
+        item.details.toLowerCase().includes(query) ||
+        item.tags.some(tag => tag.toLowerCase().includes(query))
     );
     if (result.length === 0) {
         return [{ 
