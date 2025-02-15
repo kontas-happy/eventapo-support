@@ -58,6 +58,29 @@
 画面下部にある改札モードを有効にすると、改札モードが有効になります。  
 改札モードを無効にすると、通常の入場処理が行われます。
 
+## 音声・効果音について
+
+チケットをスキャンした際に、効果音が再生されます。  
+効果音は以下の通りです。
+
+### 効果音
+
+#### スキャン
+
+<audio src="/sounds/scan.mp3" controlslist="nodownload nofullscreen noremoteplayback" controls></audio>
+
+#### 入場(改札モード)
+
+<audio src="/sounds/gate.mp3" controlslist="nodownload nofullscreen noremoteplayback" controls></audio>
+
+#### 退場(改札モード)
+
+<audio src="/sounds/gate-out.mp3" controlslist="nodownload nofullscreen noremoteplayback" controls></audio>
+
+#### スキャンエラー
+
+<audio src="/sounds/error.mp3" controlslist="nodownload nofullscreen noremoteplayback" controls></audio>
+
 以上が、Eventapoの入退場管理機能についての説明です。  
 イベント当日、スムーズな入退場管理を行いましょう！
 
