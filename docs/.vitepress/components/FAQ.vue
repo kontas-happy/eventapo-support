@@ -102,8 +102,8 @@ const items: FeatureWithTags[] = [
         "link": "/fees",
         "linkText": "手数料について",
         "icon": {
-            "light": "/images/icons/saving.svg",
-            "dark": "/images/icons/dark/saving.svg"
+            "light": "/images/icons/savings.svg",
+            "dark": "/images/icons/dark/savings.svg"
         }
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
