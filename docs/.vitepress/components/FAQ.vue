@@ -76,6 +76,35 @@ const items: FeatureWithTags[] = [
         "icon": {
             "src":"/images/logos/stripe.svg"
         }
+    },
+    {
+        "title": "チケットは抽選ですか？",
+        "tags": ["チケット", "抽選", "先着順", "販売", "チケット販売", "販売方法", "チケット予約", "予約", "販売順", "販売方法"],
+        "details": "チケットは抽選ではありません。\nチケットは、先着順での販売となります。",
+        "icon": {
+            "light": "/images/icons/book_online.svg",
+            "dark": "/images/icons/dark/book_online.svg"
+        }
+    },
+    {
+        "title": "チケットは譲渡・転売できますか？",
+        "tags": ["チケット", "譲渡", "転売", "転売禁止", "チケット販売", "チケット転売", "チケット譲渡", "チケット取引", "チケット管理", "チケット移譲"],
+        "details": "チケットは譲渡・転売できません。\nチケットをキャンセルしたい場合は、イベント主催者にお問い合わせください。",
+        "icon": {
+            "light": "/images/icons/confirmation_number.svg",
+            "dark": "/images/icons/dark/confirmation_number.svg"
+        }
+    },
+    {
+        "title": "Eventapoのサービスは無料ですか？",
+        "tags": ["Eventapo", "サービス", "料金", "無料", "プラン", "有料", "料金体系", "利用料金", "料金プラン", "料金設定"],
+        "details": "Eventapoは、基本的に無料でご利用いただけます。\n一部の機能は手数料が発生する場合があります。\n詳しくは、手数料についてのページをご覧ください。",
+        "link": "/fees",
+        "linkText": "手数料について",
+        "icon": {
+            "light": "/images/icons/saving.svg",
+            "dark": "/images/icons/dark/saving.svg"
+        }
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
 
