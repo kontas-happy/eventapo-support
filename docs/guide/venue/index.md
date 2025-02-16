@@ -18,8 +18,8 @@ Eventapoには、イベント開催に便利な会場操作機能があります
       'details': 'イベント当日、チケットのQRコードをスキャンして、入退場管理をすることができます。',
       'link': './scan-ticket.md',
       'icon': {
-        'light': '/images/icons/qr_code_scanner_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg',
-        'dark': '/images/icons/dark/qr_code_scanner_24dp_ffffff_FILL0_wght200_GRAD0_opsz24.svg'
+        'light': '/images/icons/qr_code_scanner.svg',
+        'dark': '/images/icons/dark/qr_code_scanner.svg'
       }
     },
     {
@@ -27,8 +27,8 @@ Eventapoには、イベント開催に便利な会場操作機能があります
       'details': '会場内の人数や退場済みの人数、また参加者の一覧を確認することができます。',
       'link': './attendees-list.md',
       'icon': {
-        'light': '/images/icons/checklist_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg',
-        'dark': '/images/icons/dark/checklist_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg'
+        'light': '/images/icons/checklist.svg',
+        'dark': '/images/icons/dark/checklist.svg'
       }
     }
   ]"
