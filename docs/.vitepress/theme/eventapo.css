@@ -96,3 +96,50 @@ th {
     color: var(--vp-button-brand-active-text);
     background-color: var(--vp-c-green-1);
 }
+
+/* Home Style */
+body:has(.VPHome) {
+    background-image: url('/images/background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body:has(.VPHome) .VPNavBar {
+    background: transparent !important;
+    transition: backdrop-filter 0.25s, -webkit-backdrop-filter 0.25s;
+}
+
+body:has(.VPHome) .VPNavBar:not(.has-sidebar):not(.home.top) {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+body:has(.VPHome) .VPNavBar .divider {
+    display: none;
+}
+
+body:has(.VPHome) .VPFeature {
+    background: transparent !important;
+    border-width: 0 !important;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+body:has(.VPHome) .VPFeature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--vp-c-bg);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+body:has(.VPHome) .VPFooter {
+    background: transparent !important;
+    border-width: 0 !important;
+}
