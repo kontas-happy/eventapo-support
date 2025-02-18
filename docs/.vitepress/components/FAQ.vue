@@ -105,6 +105,17 @@ const items: FeatureWithTags[] = [
             "light": "/images/icons/savings.svg",
             "dark": "/images/icons/dark/savings.svg"
         }
+    },
+    {
+        "title": "不具合が起こりました。どこに問い合わせたら良いですか？",
+        "tags": ["不具合", "問い合わせ", "サポート", "お問い合わせ", "エラー", "トラブル", "バグ", "問題", "サポート窓口", "サポートセンター"],
+        "details": "不具合が発生した場合は、いつでもお気軽にお問い合わせください。\n担当スタッフが丁寧に対応させていただきます。",
+        "link": "https://eventapo.com/contact",
+        "linkText": "お問い合わせ",
+        "icon": {
+            "light": "/images/icons/bug_report.svg",
+            "dark": "/images/icons/dark/bug_report.svg"
+        }
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
 
