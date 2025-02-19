@@ -116,6 +116,60 @@ const items: FeatureWithTags[] = [
             "light": "/images/icons/bug_report.svg",
             "dark": "/images/icons/dark/bug_report.svg"
         }
+    },
+    {
+        "title": "イベントの公開範囲を変更できますか？",
+        "tags": ["公開範囲", "非公開", "公開", "公開設定", "公開方法", "公開範囲設定", "公開設定方法", "公開範囲変更", "公開設定変更", "公開設定方法"],
+        "details": "イベントの公開範囲は、「リンクを知っている人のみ」と「全体公開」の2種類から選択できます。\n公開範囲の変更は、イベント設定画面から行えます。",
+        "icon": {
+            "light": "/images/icons/public.svg",
+            "dark": "/images/icons/dark/public.svg"
+        }
+    },
+    {
+        "title": "イベントの日時を変更できますか？",
+        "tags": ["日時", "変更", "スケジュール", "日程", "時間", "イベント設定", "スケジュール変更", "日程変更", "時間変更", "イベント時間"],
+        "details": "イベントの日時は、イベント設定画面から変更できます。",
+        "icon": {
+            "light": "/images/icons/calendar_month.svg",
+            "dark": "/images/icons/dark/calendar_month.svg"
+        }
+    },
+    {
+        "title": "有料チケットを販売できますか？",
+        "tags": ["チケット", "有料", "販売", "料金", "決済", "Stripe", "チケット販売", "料金設定", "支払い", "オンライン決済"],
+        "details": "有料チケットの販売が可能です。\nStripeアカウントを連携することで、安全な決済処理を行えます。",
+        "icon": {
+            "light": "/images/icons/storefront.svg",
+            "dark": "/images/icons/dark/storefront.svg"
+        }
+    },
+    {
+        "title": "複数のイベントを同時に運営できますか？",
+        "tags": ["複数イベント", "運営", "主催", "同時開催", "イベント管理", "主催者", "運営管理", "イベント作成", "管理機能", "イベント運営"],
+        "details": "はい、複数のイベントを同時に運営することができます。\nイベントごとに個別の管理画面があり、効率的な運営が可能です。",
+        "icon": {
+            "light": "/images/icons/note_stack.svg",
+            "dark": "/images/icons/dark/note_stack.svg"
+        }
+    },
+    {
+        "title": "イベントの参加者数を制限できますか？",
+        "tags": ["参加者数", "定員", "制限", "人数制限", "イベント設定", "キャパシティ", "参加制限", "定員設定", "管理", "チケット"],
+        "details": "はい、イベント作成時に最大参加者数（定員）を設定できます。\n定員に達した場合、自動的にチケットの販売が停止されます。",
+        "icon": {
+            "light": "/images/icons/groups.svg",
+            "dark": "/images/icons/dark/groups.svg"
+        }
+    },
+    {
+        "title": "スマートフォンでも利用できますか？",
+        "tags": ["スマートフォン", "モバイル", "対応", "レスポンシブ", "アプリ", "スマホ", "タブレット", "デバイス", "互換性", "アクセス"],
+        "details": "はい、スマートフォンやタブレットなど、様々なデバイスに対応しています。\nブラウザさえあれば、どのデバイスからでもご利用いただけます。",
+        "icon": {
+            "light": "/images/icons/smartphone.svg",
+            "dark": "/images/icons/dark/smartphone.svg"
+        }
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
 
