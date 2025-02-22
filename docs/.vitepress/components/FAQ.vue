@@ -170,6 +170,17 @@ const items: FeatureWithTags[] = [
             "light": "/images/icons/smartphone.svg",
             "dark": "/images/icons/dark/smartphone.svg"
         }
+    },
+    {
+        "title": "Eventapoの読み方は？",
+        "tags": ["Eventapo", "読み方", "発音", "名前", "イベンタポ", "イベントアポ", "イベントアポイント", "イベントアポイントメント", "イベントアポイント", "イベント"],
+        "details": "Eventapoは「イベンタポ」と発音します。",
+        "icon": {
+            "light": "/images/logos/eventapo-symbol.svg",
+            "dark": "/images/logos/dark/eventapo-symbol.svg"
+        },
+        "link": "/sounds/eventapo-pronunciation.mp3",
+        "linkText": "発音を聞く(KanaVoiceによる音声)"
     }
 ].sort((a, b) => a.title.localeCompare(b.title));
 
