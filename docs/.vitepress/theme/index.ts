@@ -5,6 +5,7 @@ import DefaultTheme, { VPFeatures } from "vitepress/theme";
 import FAQ from "../components/FAQ.vue";
 import FeeExample from "../components/FeeExample.vue";
 import FeePreview from "../components/FeePreview.vue";
+import ThemeImage from "../components/ThemeImage.vue";
 import WritingPage from "../components/WritingPage.vue";
 
 export default {
@@ -15,6 +16,7 @@ export default {
         app.component("FAQ", FAQ);
         app.component("FeeExample", FeeExample);
         app.component("FeePreview", FeePreview);
+        app.component("ThemeImage", ThemeImage);
         app.component("WritingPage", WritingPage);
     }
 };
