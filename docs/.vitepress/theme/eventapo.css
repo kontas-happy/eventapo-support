@@ -25,6 +25,10 @@ th {
     border-radius: 8px;
 }
 
+main img {
+    border-radius: 8px;
+}
+
 /* Reset padding */
 .vp-doc .VPFeatures {
     padding: 0 !important;
